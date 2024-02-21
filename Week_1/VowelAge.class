@@ -1,0 +1,30 @@
+// Source code is decompiled from a .class file using FernFlower decompiler.
+import java.util.Scanner;
+
+public class VowelAge {
+   public VowelAge() {
+   }
+
+   public static void main(String[] var0) {
+      Scanner var1 = new Scanner(System.in);
+      String var2 = var1.nextLine();
+      char[] var3 = var2.toCharArray();
+      int var4 = var1.nextInt();
+      int var5 = 0;
+
+      for(int var7 = 0; var7 < var3.length; ++var7) {
+         if (var3[var7] == 'a' || var3[var7] == 'e' || var3[var7] == 'i' || var3[var7] == 'o' || var3[var7] == 'u' || var3[var7] == 'A' || var3[var7] == 'E' || var3[var7] == 'I' || var3[var7] == 'O' || var3[var7] == 'U') {
+            ++var5;
+         }
+      }
+
+      String var6;
+      if (var4 >= 18) {
+         var6 = "an adult";
+      } else {
+         var6 = "a minor";
+      }
+
+      System.out.println("Hello " + var2 + ", you have " + var5 + " vowels, and you are " + var6);
+   }
+}
